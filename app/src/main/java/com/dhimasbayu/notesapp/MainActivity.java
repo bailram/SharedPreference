@@ -70,11 +70,12 @@ public class MainActivity extends AppCompatActivity implements LoginFragment.OnL
         settings = new Settings(this);
         session = new Session(settings);
 
-        getSupportActionBar().setBackgroundDrawable(
-                new ColorDrawable(Color.parseColor("#5e9c00")));
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(ContextCompat.getColor(this,R.color.colorAccent));
-        }
+
+//        getSupportActionBar().setBackgroundDrawable(
+//                new ColorDrawable(Color.parseColor("#5e9c00")));
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//            getWindow().setStatusBarColor(ContextCompat.getColor(this,R.color.colorAccent));
+//        }
 
         addFragment();
     }
